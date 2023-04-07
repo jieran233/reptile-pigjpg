@@ -18,7 +18,7 @@ def getThisPagePic(page=1): # 此页图片爬取完毕返回True，此页不存�
         return(False)
     else:
         for i in range(len(got_['pics'])):
-            thisurl = got_['pics'][i]['info']['src'][0][0]
+            thisurl = got_['pics'][i]['info']['src'][-1][0]
             thisfilename = re.findall('([^<>/\\\|:""\*\?]+\.\w+$)', thisurl)
             thisfilename = thisfilename[0]
             print(thisfilename)
