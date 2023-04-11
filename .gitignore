@@ -2,3 +2,10 @@
 *.py[cod]
 
 imgs/*
+
+*.zip
+*.rar
+*.7z
+*.tar.zst
+*.sh
+SHA*SUM*
