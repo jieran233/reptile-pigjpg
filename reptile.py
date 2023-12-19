@@ -6,7 +6,7 @@ import os
 import signal
 
 API = 'https://pigjpg.com/api/pic/?order=-create_time&page='
-OUTPUT_DIR = 'C:\\.cache\\imgs\\'
+OUTPUT_DIR = os.path.split(os.path.realpath(__file__))[0]
 
 stop_requested = False
 
